@@ -1,0 +1,11 @@
+CHIP Inc16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+   // Put you code here:
+   // Add binary 1 to input.
+   // b[0]=true sets first bit to 1.
+   // b[1..15] are all zeros
+   Add16(a=in, b[0]=true, out=out);
+}
