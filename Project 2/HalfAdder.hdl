@@ -1,0 +1,12 @@
+CHIP HalfAdder {
+    IN a, b;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b 
+        carry;  // Left bit of a + b
+
+    PARTS:
+    // Put you code here:
+    // Sum is 1 if either is 1.
+    Xor(a=a, b=b, out=sum);
+    // Carry is 1 if both are 1.
+    And(a=a, b=b, out=carry);
+}
