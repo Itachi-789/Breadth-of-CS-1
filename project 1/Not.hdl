@@ -1,0 +1,9 @@
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    // Simple usage of Nand gate.
+    Nand(a=in, b=in, out=out);
+}
