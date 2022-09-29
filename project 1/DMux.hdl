@@ -1,0 +1,12 @@
+CHIP DMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+    // Put your code here:
+    // Create a negated version of sel.
+    Not(in=sel, out=selNot);
+    // Use sel to filter the selected output.
+    And(a=in, b=selNot, out=a);
+    And(a=in, b=sel, out=b);
+}
