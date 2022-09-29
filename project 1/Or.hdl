@@ -1,0 +1,12 @@
+CHIP Or {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    // Negate both inputs first.
+    Not(in=a, out=aNot);
+    Not(in=b, out=bNot);
+    // Then use Nand gate.
+    Nand(a=aNot, b=bNot, out=out);
+}
